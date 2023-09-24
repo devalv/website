@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Девяткин Алексей';
+const telegram = 'tg://resolve?domain=dal_dev';
 export const siteTitle = 'Девяткин Алексей';
 
 export default function Layout({ children, home }) {
@@ -30,6 +31,9 @@ export default function Layout({ children, home }) {
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h3 className={utilStyles.headingMd}>
+                <a href={telegram} className={utilStyles.colorInherit}>Телеграм</a>
+            </h3>
           </>
         ) : (
           <>
