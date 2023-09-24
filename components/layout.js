@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 const name = 'Девяткин Алексей';
 const telegram = 'tg://resolve?domain=dal_dev';
+const mail = 'mailto:devyatkin.av@ya.ru'
 export const siteTitle = 'Девяткин Алексей';
 
 export default function Layout({ children, home }) {
@@ -31,9 +32,26 @@ export default function Layout({ children, home }) {
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <h3 className={utilStyles.headingMd}>
-                <a href={telegram} className={utilStyles.colorInherit}>Телеграм</a>
-            </h3>
+            <div>
+              <a href={telegram}>
+                <Image
+                src="/images/telegram-logo.svg"
+                className={utilStyles.borderCircle}
+                height={32}
+                width={32}
+                alt="Телеграм"
+                />
+              </a>
+              <a href={mail}>
+                <Image
+                src="/images/mailbox.svg"
+                className={utilStyles.borderCircle}
+                height={32}
+                width={32}
+                alt="Почта"
+                />
+              </a>
+            </div>
           </>
         ) : (
           <>

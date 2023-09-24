@@ -23,10 +23,18 @@
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
+    color: gray;
+  }
+
+  .headingSm {
+    font-size: 1.0rem;
+    line-height: 1.2;
   }
   
   .borderCircle {
     border-radius: 9999px;
+    display: inline;
+    margin: 0.5rem;
   }
   
   .colorInherit {
@@ -44,9 +52,21 @@
   }
   
   .listItem {
-    margin: 0 0 1.25rem;
+    margin: 0 0 0.3rem;
   }
   
   .lightText {
     color: #666;
+  }
+
+  .contactsTelegram {
+    color: blue;
+  }
+
+  .contactsMail {
+    color: red;
+  }
+
+  .currentInfo {
+    text-align: justify-all;
   }
