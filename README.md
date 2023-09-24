@@ -3,8 +3,11 @@
 ## Технологии
 
 [next.js](https://nextjs.org/)
-[caddy](https://caddyserver.com/)
 
 ## Запуск
+
+```bash
+npm i && npm run dev
+```
 
 ## Build
