@@ -15,12 +15,11 @@ export default function Home() {
             <li className={utilStyles.listItem}>Пишу <a href="https://github.com/devalv">код</a> на Python и Go.</li>
             <li className={utilStyles.listItem}>Систематизирую и улучшаю процессы.</li>
           </ul>
-        {/* TODO: нужно ли указать год? */}
         </div>
         <div>
           <h3 className={utilStyles.headingMd}>Ранее</h3>
           <div>
-            <h4 className={utilStyles.headingSm}>Разработчик в X5 Tech</h4>
+            <h4 className={utilStyles.headingSm}>Разработчик в X5 Tech (2021-2023)</h4>
             <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>
                 Писал новый и поддерживал старый backend на <a href="https://www.django-rest-framework.org">DRF</a>
@@ -31,13 +30,13 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h4 className={utilStyles.headingSm}>Ревьюер в Практикуме</h4>
+            <h4 className={utilStyles.headingSm}>Ревьюер в Практикуме (2022-2023)</h4>
             <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>Помогал студентам освоить курсы Python-разработчик и Python-разработчик плюс</li>
             </ul>
           </div>
           <div>
-            <h4 className={utilStyles.headingSm}>Тимлид команды разработки в НИИ Масштаб</h4>
+            <h4 className={utilStyles.headingSm}>Тимлид команды разработки в НИИ Масштаб (2019-2021)</h4>
             <ul className={utilStyles.list}> 
               <li className={utilStyles.listItem}>Выпустил несколько мажорных релизов нового продукта</li>
               <li className={utilStyles.listItem}>Систематизировал общие наработки</li>
@@ -45,14 +44,14 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h4 className={utilStyles.headingSm}>Разработчик в 100инг</h4>
+            <h4 className={utilStyles.headingSm}>Разработчик в 100инг (2018-2019)</h4>
             <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>Писал новый и поддерживал старый backend на <a href="https://www.djangoproject.com">Django</a></li>
               <li className={utilStyles.listItem}>Мигрировал и поддерживал инфраструктуру</li>
             </ul>
           </div>
           <div>
-            <h4 className={utilStyles.headingSm}>Руководил разработкой в <a href="https://cit.gov-murman.ru">ЦИТ Мурманской области</a></h4>
+            <h4 className={utilStyles.headingSm}>Руководил разработкой в <a href="https://cit.gov-murman.ru">ЦИТ Мурманской области</a> (2017-2018)</h4>
             <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>Совместно с бизнесом выстроил процесс разработки в компании</li>
               <li className={utilStyles.listItem}>Подготовил и поддерживал инфраструктуру</li>
@@ -60,7 +59,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h4 className={utilStyles.headingSm}>Ведущий инженер в Ростелеком</h4>
+            <h4 className={utilStyles.headingSm}>Ведущий инженер в Ростелеком (2009-2017)</h4>
             <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>Поддерживал много разных и сложных информационных систем</li>
               <li className={utilStyles.listItem}>Помогал аналитикам формировать отчёты на SQL</li>
@@ -72,18 +71,16 @@ export default function Home() {
         <div>
           <h3 className={utilStyles.headingMd}>Образование</h3>
           <div>
-            <h4 className={utilStyles.headingSm}>Информатика и ВТ</h4>
+            <h4 className={utilStyles.headingSm}>Информатика и ВТ (2010)</h4>
             <ul className={utilStyles.list}>
-              <li className={utilStyles.listItem}>2010</li>
               <li className={utilStyles.listItem}>Диплом с отличием</li>
               <li className={utilStyles.listItem}>Современная гуманитарная академия</li>
               <li className={utilStyles.listItem}>Бакалавр</li>
             </ul>
           </div>
           <div>
-            <h4 className={utilStyles.headingSm}>Автоматизированные системы обработки информации и управления</h4>
+            <h4 className={utilStyles.headingSm}>Автоматизированные системы обработки информации и управления (2006)</h4>
               <ul className={utilStyles.list}>
-                <li className={utilStyles.listItem}>2006</li>
                 <li className={utilStyles.listItem}>Диплом с отличием</li>
                 <li className={utilStyles.listItem}>Мурманский морской рыбопромышленный колледж</li>
                 <li className={utilStyles.listItem}>Техник</li>
