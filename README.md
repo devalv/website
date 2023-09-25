@@ -4,9 +4,11 @@
 
 [next.js](https://nextjs.org/)
 
-## Запуск
+## Dev
 
 ```bash
+pip install pre-commit
+pre-commit install
 npm i && npm run dev
 ```
 

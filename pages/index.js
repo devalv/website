@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div>
             <h4 className={utilStyles.headingSm}>Тимлид команды разработки в НИИ Масштаб (2019-2021)</h4>
-            <ul className={utilStyles.list}> 
+            <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>Выпустил несколько мажорных релизов нового продукта</li>
               <li className={utilStyles.listItem}>Систематизировал общие наработки</li>
               <li className={utilStyles.listItem}>Писал новый и поддерживал старый backend на <a href="https://www.tornadoweb.org/">Tornado</a> и <a href="https://docs.aiohttp.org">AIOHTTP</a></li>
