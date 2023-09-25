@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm i -D prettier eslint husky lint-staged
+        run: npm i
 
       - name: Lint
-        run: ./node_modules/.bin/eslint -v & ./node_modules/.bin/eslint . --config .eslintrc.js
+        run: npm run lint
