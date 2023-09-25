@@ -22,4 +22,4 @@ jobs:
         run: npm i -D prettier eslint husky lint-staged
 
       - name: Lint
-        run: ./node_modules/.bin/eslint -v & ./node_modules/.bin/eslint . --config .eslintrc
+        run: ./node_modules/.bin/eslint -v & ./node_modules/.bin/eslint . --config .eslintrc.js
