@@ -25,7 +25,7 @@ export default function Home() {
                 Писал новый и поддерживал старый backend на <a href="https://www.django-rest-framework.org">DRF</a>
                 &nbsp;и&nbsp;<a href="https://fastapi.tiangolo.com">FastAPI</a>
               </li>
-              <li className={utilStyles.listItem}>Помогал другим продуктам в доработки решений принятых на поддержку</li>
+              <li className={utilStyles.listItem}>Помогал другим продуктам в доработке решений принятых на поддержку</li>
               <li className={utilStyles.listItem}>Активно участвовал в code-review и scrum-ритуалах</li>
             </ul>
           </div>
