@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/website/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Краткое описание обо мне и чем я занимаюсь"
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/website/images/userpic.jpg"
+              src="/images/userpic.jpg"
               className={utilStyles.borderCircle}
               height={200}
               width={200}
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
             <div>
               <a href={telegram}>
                 <Image
-                src="/website/images/telegram-logo.svg"
+                src="/images/telegram-logo.svg"
                 className={utilStyles.borderCircle}
                 height={32}
                 width={32}
@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
               </a>
               <a href={mail}>
                 <Image
-                src="/website/images/mailbox.svg"
+                src="/images/mailbox.svg"
                 className={utilStyles.borderCircle}
                 height={32}
                 width={32}
@@ -58,7 +58,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/website/images/userpic.jpg"
+                src="/images/userpic.jpg"
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
