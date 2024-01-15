@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/userpic.jpg"
+              src="/website/images/userpic.jpg"
               className={utilStyles.borderCircle}
               height={200}
               width={200}
@@ -35,7 +35,7 @@ export default function Layout({ children, home }) {
             <div>
               <a href={telegram}>
                 <Image
-                src="/images/telegram-logo.svg"
+                src="/website/images/telegram-logo.svg"
                 className={utilStyles.borderCircle}
                 height={32}
                 width={32}
@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
               </a>
               <a href={mail}>
                 <Image
-                src="/images/mailbox.svg"
+                src="/website/images/mailbox.svg"
                 className={utilStyles.borderCircle}
                 height={32}
                 width={32}
@@ -58,7 +58,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/userpic.jpg"
+                src="/website/images/userpic.jpg"
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
