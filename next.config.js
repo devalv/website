@@ -20,4 +20,5 @@ const nextConfig = {
     basePath: "/website",
   }
 
-module.exports = nextConfig
+/* module.exports = nextConfig */
+export default nextConfig;
