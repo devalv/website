@@ -73,7 +73,7 @@ export default function Home() {
           <div>
             <h4 className={utilStyles.headingSm}>Управление IT-проектами (2025)</h4>
             <ul className={utilStyles.list}>
-              <li className={utilStyles.listItem}>Национальный исследовательский ядерный университет "МИФИ"</li>
+              <li className={utilStyles.listItem}>Национальный исследовательский ядерный университет `МИФИ`</li>
               <li className={utilStyles.listItem}>Диплом о профессиональной переподготовке</li>
             </ul>
           </div>
