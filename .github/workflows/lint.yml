@@ -28,4 +28,4 @@ jobs:
       
       - name: Run ESLint directly (debug)
         run: |
-          npx next lint . --dir . 2>&1 || echo "Lint completed with warnings"
+          npx next lint . 2>&1 || echo "Lint completed with warnings"
