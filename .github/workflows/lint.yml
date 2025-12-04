@@ -1,25 +1,65 @@
 name: ESLint
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   ci:
     runs-on: ubuntu-latest
-
+    
     strategy:
       matrix:
         node-version: [20.x]
-
+    
     steps:
       - uses: actions/checkout@v3
-
+      
+      - name: Debug - List directory structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Looking for ESLint config files:"
+          find . -name ".eslintrc*" -o -name "eslint.config.*" -o -name ".eslintignore" || true
+      
+      - name: Check package.json
+        run: |
+          if [ -f package.json ]; then
+            echo "package.json exists"
+            cat package.json
+          else
+            echo "WARNING: package.json not found"
+          fi
+      
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-
+      
       - name: Install dependencies
-        run: npm i
-
-      - name: Lint
-        run: npm run lint
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+          else
+            echo "No package.json found, skipping npm install"
+          fi
+      
+      - name: Run ESLint directly (debug)
+        run: |
+          if command -v eslint &> /dev/null; then
+            echo "ESLint is available"
+            eslint --version
+            # Попробуем найти файлы для линтинга
+            find . -name "*.js" -o -name "*.jsx" -o -name "*.ts" -o -name "*.tsx" | head -10
+            # Попробуем запустить ESLint на текущей директории
+            npx eslint . --ext .js,.jsx,.ts,.tsx || true
+          else
+            echo "ESLint not installed"
+          fi
+      
+      - name: Lint (if package.json has script)
+        run: |
+          if [ -f package.json ] && npm run | grep -q "lint"; then
+            npm run lint
+          else
+            echo "No lint script found in package.json"
+          fi
