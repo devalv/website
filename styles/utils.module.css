@@ -70,3 +70,43 @@
   .currentInfo {
     text-align: justify-all;
   }
+
+    /* Контейнер для ключевых навыков */
+  .skillsContainer {
+    background: #f8f9fa;
+    border-left: 4px solid #0070f3;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .skillsTitle {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: #0070f3;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+  }
+
+  /* Стилизация подразделов опыта */
+  .experienceBlock {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1rem;
+  }
+
+  .experienceBlock:last-child {
+    border-bottom: none;
+  }
+
+  .jobTitle {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .companyInfo {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
