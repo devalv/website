@@ -53,7 +53,7 @@ export default function Home() {
             <div className={utilStyles.companyInfo}>X5 Tech | 2021 — 2023</div>
             <ul className={utilStyles.list}>
               <li className={utilStyles.listItem}>Разрабатывал backend для систем закупок и аукционов со сложной бизнес-логикой и финансовыми расчетами.</li>
-              <li className={utilStyles.listItem}>Восстановил и стабилизировал систему электронных командировок, переданную без документации.</li>
+              <li className={utilStyles.listItem}>Стабилизировал систему *****, переданную без документации.</li>
             </ul>
           </div>
 
@@ -91,6 +91,10 @@ export default function Home() {
           <div className={utilStyles.experienceBlock}>
             <div className={utilStyles.jobTitle}>Информатика и ВТ (Диплом с отличием)</div>
             <div className={utilStyles.companyInfo}>Современная гуманитарная академия | 2010</div>
+          </div>
+          <div className={utilStyles.experienceBlock}>
+            <div className={utilStyles.jobTitle}>Автоматизированные системы обработĸи информации и управления (Диплом с отличием)</div>
+            <div className={utilStyles.companyInfo}>ММРК | 2006</div>
           </div>
         </div>
       </section>
