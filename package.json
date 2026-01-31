@@ -17,22 +17,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{html,css,less,ejs}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "devDependencies": {
-    "eslint": "^9.39.2",
-    "eslint-config-next": "^16.1.6",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.0.3"
   }
 }
