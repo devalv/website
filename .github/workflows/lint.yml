@@ -3,29 +3,15 @@ name: ESLint
 on: [pull_request]
 
 jobs:
-  ci:
+  eslint:
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node-version: [20.x]
-    
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      
+      - uses: actions/checkout@v4
       - name: Install dependencies
-        run: |
-          if [ -f package.json ]; then
-            npm ci
-          else
-            echo "No package.json found, skipping npm install"
-          fi
-      
-      - name: Run ESLint directly
-        run: |
-          npx eslint .
+        run: npm ci
+      - name: Run ESLint action
+        uses: sibiraj-s/action-eslint@v4
+        with:
+          # Optional inputs (see action documentation for more)
+          ignore-path: '.eslintignore' 
+          eslint-args: '--format json'
