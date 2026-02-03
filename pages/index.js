@@ -44,7 +44,7 @@ export default function Home() {
               <li className={utilStyles.listItem}>Трансформировал процессы разработки: переход к прозрачному Kanban, внедрение DoD/ACC и плейбуков.</li>
               <li className={utilStyles.listItem}>Руковожу кросс-функциональной командой из 10 человек (Python, Go, C/C++, DevOps).</li>
               <li className={utilStyles.listItem}>Внедрил проектирование через C4 model и автоматизированную систему SAST (Semgrep, Trivy, DefectDojo).</li>
-              <li className={utilStyles.listItem}>Обеспечил успешное прохождение сертификации продукта по безопасности.</li>
+              {/*<li className={utilStyles.listItem}>Обеспечил успешное подготовку к сертификации продукта по линии ФСТЭК.</li>*/}
             </ul>
           </div>
 
