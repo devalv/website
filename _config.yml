@@ -1,0 +1,19 @@
+title: "Алексей Девяткин"
+description: "Technical Team Lead / Engineering Manager"
+url: "https://devalv.github.io"
+baseurl: "/website"
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - vendor/
+  - node_modules/
+  - package.json
+  - package-lock.json
