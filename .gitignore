@@ -28,3 +28,14 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+
+# jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock
+node_modules/
